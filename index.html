@@ -6,14 +6,59 @@
 	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
 	      name="viewport">
 	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Vollkorn:ital@0;1&display=swap"
+	      rel="stylesheet">
 	<link href="./Style/reset.css" rel="stylesheet">
 	<link href="./Style/index.css" rel="stylesheet">
-	<title>Burger menu</title>
+	<title>Burger menu-Hlegalls</title>
 </head>
-<body>
+<header>
 
-<h1>Выпадающее меню навигации при наведении 1</h1>
-<h2>Выпадающее меню навигации при наведении 2</h2>
+	<div class="header-mobile">
+
+		<div class="homepage-header__contacts-mobile">
+			<div class="homepage-header__contacts_cng-lang">
+				<h6 class="btn active"><a href="#">УК</a></h6>
+				<h6 class="btn"><a href="#">РУ</a></h6>
+				<h6 class="btn"><a href="#">EN</a></h6>
+			</div>
+			<div class="homepage-header-zone-text-PhoneNumber">+38 (050) 390 15 95</div>
+		</div>
+
+		<nav class="nav-mobile">
+			<img class="MainLogoMobile" src="./images/homepage-header-img-MainLogo.png" alt="header-MainLogoMobile">
+
+			<input type="checkbox" id="menu" name="menu" class="m-menu__checkbox">
+
+			<label class="m-menu__toggle" for="menu">
+				<svg width="20" height="20"><use href="./sprite.svg#m-menu__toggle(-)"/></svg>
+			</label>
+			<div class="m-menu">
+				<div class="m-menu__header">
+
+					<img src="./images/homepage-header-img-LongLegMobileNav.png" alt="LongLegMobileNav">
+
+					<label class="m-menu__toggle" for="menu">
+						<svg width="35" height="35"><use href="./sprite.svg#m-menu__toggle(X)"/></svg>
+					</label>
+				</div>
+
+				<ul>
+					<li><h4><label>про нас</label></h4></li>
+					<li><h4><label>послуги</label></h4></li>
+					<li><h4><label>команда</label></h4></li>
+					<li><h4><label>публікації</label></h4></li>
+					<li><h4><label>контакти</label></h4></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+</header>
+
+<body>
 
 
 

@@ -1,0 +1,121 @@
+@import "common.css";
+
+header {
+    background: center/cover no-repeat url("../images/homepage-gradient-img-bg.jpg");
+}
+.header-mobile {
+    max-width: 375px;
+    width: 100%;
+    height: 667px;
+    margin: 100px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.homepage-header__contacts-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.homepage-header__contacts_cng-lang {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.homepage-header__contacts_cng-lang .btn a {
+    cursor: pointer;
+    padding: 5px 6px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    color: var(--gray-text);
+}
+.homepage-header__contacts_cng-lang .btn a:hover {
+    color: var(--gray-text);
+    background-color: var(--gray-BgAlt);
+    border-radius: 8px;
+    transition: all 0.2s ease-out;
+}
+.homepage-header__contacts_cng-lang .active a {
+    background-color: var(--pink-accent);
+    border-radius: 8px;
+    transition: all 0.2s ease-out;
+}
+.homepage-header-zone-text-PhoneNumber {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--gray-text);
+}
+.nav-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+}
+.nav-mobile .MainLogoMobile {
+    max-width: 78px;
+    width: 100%;
+}
+.nav-mobile .m-menu__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px 15px 20px;
+}
+.nav-mobile .m-menu__header img {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.nav-mobile .m-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 375px;
+    width: 100vw;
+    height: 100%;
+    transform: translate3d(-375px, 0, 0);
+    transition: transform 0.45s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+    background-color: var(--main-white);
+}
+.nav-mobile .m-menu ul li a,
+.nav-mobile .m-menu ul li label {
+    background: #F5F5FA;
+    cursor: pointer;
+    border: 2px solid var(--main-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 20px 15px;
+}
+.nav-mobile .m-menu ul li h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: none;
+    color: var(--blue-main);
+}
+.nav-mobile .m-menu ul li h4:hover {
+    color: var(--pink-accent);
+    transition: all 0.2s ease-out;
+}
+.nav-mobile .m-menu__checkbox {
+    display: none;
+}
+.nav-mobile label.m-menu__toggle {
+    cursor: pointer;
+}
+.nav-mobile .m-menu__checkbox:checked ~ .m-menu {
+    transform: translate3d(0, 0, 0);
+    transition: all 0.45s ease-out;
+}
+
+
+
